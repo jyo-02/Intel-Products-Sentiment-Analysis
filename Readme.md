@@ -20,11 +20,12 @@ The goal of this project is to perform sentiment analysis on customer reviews to
 
     * Save all the website links and processor names in their respective URL files. Run each program as needed to collect the data.
     
-    * If there are multiple processor from a single wesite then merge them all by `multimerger.ipynb` which is in `1-web-scrapers/helper/`
+    * If there are multiple processors from a single website, then merge them all using `multimerger.ipynb` located in `1-web-scrapers/helper/multimerger.ipynb`.
 
-    * After collecting the reviews from each website, merge all the reviews into a single dataset for analysis using `3merger.ipynb` which is in `1-web-scrapers/helper/`.
+    * After collecting the reviews from each website, merge all the reviews into a single dataset for analysis using `3merger.ipynb` found in `1-web-scrapers/helper/3merger.ipynb`.
 
 2. ## Text Preprocessing
+
     The collected reviews undergo the following preprocessing steps:
     * **Translation of Foreign Languages**
     * **Lowercase Conversion**
@@ -33,33 +34,34 @@ The goal of this project is to perform sentiment analysis on customer reviews to
     * **Removal of Stopwords**
     * **Tokenization**
     * **Lemmatization**
+
 3. ## ML Model
-    There are six types of ml model which have tried
-    * Vader
+
+    Six types of machine learning models were tried:
+    * VADER
     * RoBERTa
     * TextBlob
     * XGBoost
     * Random Forest
     * Sector Vector
 
-At the end we choosed two model beacause of high accuracy they are:
+    At the end, two models were chosen due to their high accuracy:
+    `VADER`
+    `RoBERTa`
 
-`Vader`
-`RoBERTa`
+    * VADER provided the initial sentiment of all the reviews, which were stored in a CSV file.
+    * RoBERTa was then trained on that data.
 
-* Vader has given the initial sentiment of the all the reviews and stored in csv file.
-* Later RoBERTa was trained on that data.
+    ### Location of Code:
+    **VADER:** `2-ml-model/3-model_code/vader_textblob.ipynb`
 
-### Location of code:
-**Vader :** `2-ml-model/3-model_code/vader_textblob.ipynb`
+    **RoBERTa:** `2-ml-model/3-model_code/roberta_senti.ipynb`
 
-**RoBERTa** `2-ml-model/3-model_code/roberta_senti.ipynb`
+4. ## Insights
 
-3. ## Insights
-
-    1. ### EDA
+    1. ### Exploratory Data Analysis (EDA)
     2. ### Technical Review Summarization
-        * Technical reviews are Summarized in 10 lines by bart-large-cnn.
-    3. ### Product Prons & Cons
-        * Filters the most common words in the review of product in positive and negative.
-    4. ### Product Suggestion
+        * Technical reviews are summarized in 10 lines using bart-large-cnn.
+    3. ### Product Pros & Cons
+        * Filters the most common words in the product reviews, categorized as positive and negative.
+    4. ### Product Suggestions
