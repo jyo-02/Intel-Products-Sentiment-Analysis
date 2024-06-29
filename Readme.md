@@ -27,13 +27,13 @@ The goal of this project is to perform sentiment analysis on customer reviews to
 2. ## Text Preprocessing
 
     The collected reviews undergo the following preprocessing steps:
-    * **Translation of Foreign Languages**
-    * **Lowercase Conversion**
-    * **Removal of Punctuation**
-    * **Removal of Numerical Expressions**
-    * **Removal of Stopwords**
-    * **Tokenization**
-    * **Lemmatization**
+    * Translation of Foreign Languages
+    * Lowercase Conversion
+    * Removal of Punctuation
+    * Removal of Numerical Expressions
+    * Removal of Stopwords
+    * Tokenization
+    * Lemmatization
 
 3. ## ML Model
 
@@ -46,6 +46,7 @@ The goal of this project is to perform sentiment analysis on customer reviews to
     * Sector Vector
 
     At the end, two models were chosen due to their high accuracy:
+    
     `VADER`
     `RoBERTa`
 
