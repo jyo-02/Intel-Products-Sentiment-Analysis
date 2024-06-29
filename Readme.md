@@ -1,5 +1,5 @@
 <div align="center">
-    <h3 align="center">Intel Sentiment Analysis</h3>
+    <h1 align="center">Intel Sentiment Analysis</h1>
 </div>
 
 The goal of this project is to perform sentiment analysis on customer reviews to classify sentiments. This analysis will assist companies in improving product features and increasing sales performance by leveraging customer satisfaction and feedback.
@@ -9,13 +9,13 @@ The goal of this project is to perform sentiment analysis on customer reviews to
 1. ## Web Scraper
     The `1-web-scrapers` folder contains four web scrapers designed for different platforms:
     
-    * ### Amazon
+    1. ### Amazon
         * BeautifulSoup and Splash in Docker are used to scrape reviews from all Amazon regions worldwide, including India, the US, the UK, Japan, and more.
     
-    * ### BestBuy & Flipkart
+    2. ### BestBuy & Flipkart
         * BeautifulSoup is employed to scrape reviews from both BestBuy and Flipkart.
     
-    * ### Technical Reviews
+    3. ### Technical Reviews
         * Selenium is used to scrape reviews from technical review sites such as Tom's Hardware and PCMag.
 
     * Save all the website links and processor names in their respective URL files. Run each program as needed to collect the data.
@@ -45,21 +45,21 @@ The goal of this project is to perform sentiment analysis on customer reviews to
 At the end we choosed two model beacause of high accuracy they are:
 
 `Vader`
-
 `RoBERTa`
 
 * Vader has given the initial sentiment of the all the reviews and stored in csv file.
 * Later RoBERTa was trained on that data.
+
 ### Location of code:
 **Vader :** `2-ml-model/3-model_code/vader_textblob.ipynb`
 
 **RoBERTa** `2-ml-model/3-model_code/roberta_senti.ipynb`
 
-33. ## Insights
+3. ## Insights
 
     1. ### EDA
     2. ### Technical Review Summarization
-        * technical reviews are Summarized in 10 lines by bart-large-cnn.
+        * Technical reviews are Summarized in 10 lines by bart-large-cnn.
     3. ### Product Prons & Cons
         * Filters the most common words in the review of product in positive and negative.
     4. ### Product Suggestion
