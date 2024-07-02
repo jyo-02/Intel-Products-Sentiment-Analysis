@@ -5,8 +5,16 @@
 The goal of this project is to perform sentiment analysis on customer reviews to classify sentiments. This analysis will assist companies in improving product features and increasing sales performance by leveraging customer satisfaction and feedback.
 
 ## Getting Started
+Clone the repository:
+   ```bash
+   git clone https://github.com/viswachaitanyasai/Intel-Products-Sentiment-Analysis.git
+   ```
 
 Install the required dependencies with: `pip install -r requirements.txt --upgrade`.
+
+## Dataset Information
+
+We use various different models for sentiment analysis on reviews. The training dataset is expected to be a csv file of type `Product,Rating,Date,Source,Review,Sentiment` where the `Product` is the name of intel Processors,`Rating` is stars given of users,`Date` is date on review given, `Source` is where the review is scraped, `Review` is the review given by users and `sentiment` is either `1` (positive) or `0` (negative). Please note that csv headers are not expected and should be removed from the training and test datasets.
 
 # Project Workflow
 
@@ -97,3 +105,8 @@ Install the required dependencies with: `pip install -r requirements.txt --upgra
         * Code location: `3-insights/3-product-pros-cons/1-product-pros-cons.ipynb`.
         * Inside the above file, you can find all the summarizations of processors.
     4. ### Product Suggestions
+
+## Information about other files
+
+* `2-ml-model/1-review_data/random25_7_reviews.csv`: Dataset used to train the RoBERTa.
+* `2-ml-model\4-ml_trained_model\roberta_senti`: Trained RoBERTa model.
