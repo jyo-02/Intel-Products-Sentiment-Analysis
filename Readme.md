@@ -1,5 +1,5 @@
 <div align="center">
-    <h1 align="center">Intel Products Sentiment Analysis From Online Reviews</h1>
+    <h1 align="center">Intel Products Sentiment Analysis</h1>
 </div>
 
 The objective of this project is to conduct Sentiment Analysis on customer reviews sourced from prominent E-commerce platforms for various Intel Processors, aiming to classify sentiments. This analysis will assist Intel in improving product features and boosting sales performance through actionable insights derived from customer satisfaction and feedback.
