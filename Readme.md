@@ -4,6 +4,8 @@
 
 The objective of this project is to conduct Sentiment Analysis on customer reviews sourced from prominent E-commerce platforms for various Intel Processors, aiming to classify sentiments. This analysis will assist Intel in improving product features and boosting sales performance through actionable insights derived from customer satisfaction and feedback.
 
+### For a comprehensive overview of the project workflow, please refer to our Report([Click Here](https://github.com/viswachaitanyasai/Intel-Products-Sentiment-Analysis/blob/main/Report.pdf)) and PPT([Click Here](https://bit.ly/4cMZMVI)).
+
 ## Getting Started
 Clone the repository:
    ```bash
@@ -14,7 +16,11 @@ Install the required dependencies with: `pip install -r requirements.txt --upgra
 
 ## Dataset Information
 
-We utilize various sentiment analysis models on reviews. The training dataset is expected to be a csv file with columns: `Product` (Intel Processor names), `Rating` (user star ratings), `Date` (review dates), `Source` (review origin), `Review` (user feedback), and `Sentiment` (coded as 1 for positive and 0 for negative). Ensure CSV headers are excluded from both training and test datasets.
+We utilize various sentiment analysis models on reviews. The training dataset is expected to be a csv file with columns: `Product` (Intel Processor names), `Rating` (user star ratings), `Date` (review dates), `Source` (review origin), `Review` (user feedback), and `Sentiment` (which constain sentiment of Review as Positve, Neutral and Negative). Ensure CSV headers are excluded from both training and test datasets.
+
+Training Dataset size : `32k`
+
+Product Review Dataset size : `7k`
 
 # Project Workflow
 
