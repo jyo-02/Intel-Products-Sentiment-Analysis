@@ -123,3 +123,8 @@ Product Review Dataset size : `7k`
 
 * `2-ml-model/1-review_data/random25_7_reviews.csv`: Dataset used to train the RoBERTa.
 * `2-ml-model\4-ml_trained_model\roberta_senti`: Trained RoBERTa model.
+
+## Team Members
+
+- [Viswa Chaitanya Sai Jada](https://github.com/viswachaitanyasai) 
+- [Jyotiska Bose](https://github.com/jyo-02) 
